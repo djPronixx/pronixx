@@ -1,0 +1,11 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "pronixx",
+  "license": "ISC",
+  "dependencies": {
+    "python-shell": "^1.0.8"
+  }
+}

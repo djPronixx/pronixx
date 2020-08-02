@@ -1,0 +1,43 @@
+{% extends "index.html" %}
+{% block events %}
+
+<div class="site-section">
+    <div class="container">
+        <div class="row">
+
+                {% for i in shows %}
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <a href="#" class="unit-9">
+                        <div class="image" style="background-image: url('/media/{{i.show_poster}}');"></div>
+                        <div class="unit-9-content">
+                            <h2>{{i.show_name}}</h2>
+                            <span>{{i.show_date}} {{i.show_start_time}} &mdash; {{i.show_end_time}}</span>
+                            <span>with {{i.show_artists}}</span>
+                        </div>
+                    </a>
+                </div>
+                {% endfor %}
+
+        </div>
+
+    </div>
+
+    <div class="container mt-5 aos-init aos-animate" data-aos="fade-up">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="site-block-27">
+                    <ul>
+                        <li><a href="#">&lt;</a></li>
+                        <li class="active"><span>1</span></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">&gt;</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
